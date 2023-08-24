@@ -21,10 +21,8 @@ public class Question5 {
     }
 
     public static void main(String[] args) {
-        Question5 question5 = new Question5();
         CopyConstructor obj1 = new CopyConstructor(10);
         CopyConstructor obj2 = new CopyConstructor(obj1);
-
         System.out.println("obj1.data = " + obj1.getData());
         System.out.println("obj2.data = " + obj2.getData());
     }

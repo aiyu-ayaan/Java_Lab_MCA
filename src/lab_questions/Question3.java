@@ -1,11 +1,13 @@
 package lab_questions;
 
+import javax.print.attribute.IntegerSyntax;
+
 /**
  * Write a Program to swap private data members of
  * classes named as class_1, class_2 using friend function.
  */
-public class Question3 {
-    static class class_1 {
+public class Question3  {
+    static class class_1  {
         private int data1;
 
         public class_1(int data1) {
