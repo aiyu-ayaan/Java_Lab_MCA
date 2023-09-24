@@ -7,36 +7,38 @@ package lab_questions;
  * imag to two different values.
  */
 
-class Complex {
-    private int real, imag;
 
-    Complex() {
-        real = 0;
-        imag = 0;
-    }
-
-    Complex(int real) {
-        this.real = real;
-        this.imag = real;
-    }
-
-    Complex(int real, int imag) {
-        this.real = real;
-        this.imag = imag;
-    }
-
-    public void display() {
-        System.out.println(real + " + " + imag + "i");
-    }
-
-    public Complex add(Complex obj) {
-        Complex temp = new Complex();
-        temp.real = this.real + obj.real;
-        temp.imag = this.imag + obj.imag;
-        return temp;
-    }
-}
 public class Question6 {
+
+   static class Complex {
+        private int real, imag;
+
+        Complex() {
+            real = 0;
+            imag = 0;
+        }
+
+        Complex(int real) {
+            this.real = real;
+            this.imag = real;
+        }
+
+        Complex(int real, int imag) {
+            this.real = real;
+            this.imag = imag;
+        }
+
+        public void display() {
+            System.out.println(real + " + " + imag + "i");
+        }
+
+        public Complex add(Complex obj) {
+            Complex temp = new Complex();
+            temp.real = this.real + obj.real;
+            temp.imag = this.imag + obj.imag;
+            return temp;
+        }
+    }
     public static void main(String[] args) {
         Complex c1 = new Complex();
         Complex c2 = new Complex(10);
